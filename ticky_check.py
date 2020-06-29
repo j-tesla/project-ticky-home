@@ -6,8 +6,8 @@ import csv
 error = {}
 user = {'errors': {}, 'infos': {}}
 
-ERROR_PATTERN = r'ticky: ERROR: ([\w ]+) .*\(([\w]+)\)$'
-INFO_PATTERN = r'ticky: INFO: ([\w ]+) .*\(([\w]+)\)$'
+ERROR_PATTERN = r'ticky: ERROR ([\w ]+) .*\(([\w]+)\)$'
+INFO_PATTERN = r'ticky: INFO ([\w ]+) .*\(([\w]+)\)$'
 
 with open('syslog.log') as file:
     while True:
